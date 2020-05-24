@@ -1,5 +1,3 @@
-require_relative './spec_helper'
-
 def say_hello
 
     puts "Hello, #{name}"
