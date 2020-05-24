@@ -5,8 +5,7 @@ def say_hello
     puts "Hello, #{name}"
   end
 
-  it 'defaults to Ruby Programmer when no name is passed in' do
-    expect($stdout).to receive(:puts).with("Hello Ruby Programmer!")
-    say_hello()
+  def greeting(name = "Ruby programmer")
+    puts "Hello, #{name}"
   end
 end
